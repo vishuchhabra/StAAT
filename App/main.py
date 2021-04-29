@@ -63,7 +63,7 @@ class add(QMainWindow):
         roll_no = self.ui.inp_rollno.text()
         batch = bat_start +"-"+bat_end[2:]
         password = "1016594680"
-        url = "http://3.142.45.62/api/student/custom"
+        url = "https://staatapp.herokuapp.com/api/student/custom"
         output  = requests.post(url, json={"name":name,"roll_no":roll_no,"batch":batch,"class_name":class_name,"password":password})
         print(output.text)
         img = cv2.imread("temporaryimage.jpeg")
@@ -300,7 +300,7 @@ class DELETE_2(QMainWindow):
         classs = self.ui.inp_class.text()
         roll_no = self.ui.inp_rollno.text()
         os.chdir("Images")
-        url = "http://3.142.45.62/api/student/delete"
+        url = "https://staatapp.herokuapp.com/api/student/delete"
         output  = requests.put(url, json={"roll_no":roll_no , "password":"1016594680"})
         print(output.text)
         if os.path.exists(classs + "_" + roll_no + ".jpeg"):

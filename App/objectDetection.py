@@ -50,7 +50,7 @@ while True:
             roi_color = img[y:y+h, x:x+w]
 
     cv2.imshow("Result", img)
-    url  = 'http://3.142.45.62/api/class/update'
+    url  = 'https://staatapp.herokuapp.com/api/class/update'
 
     class_name ="First"
     count = 1
@@ -59,4 +59,4 @@ while True:
 
     print(output.text)
     if cv2.waitKey(1) & 0xFF == ord('q'):
-         break
+         exit()

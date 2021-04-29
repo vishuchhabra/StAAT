@@ -35,7 +35,7 @@ def markAttendance(name):
     roll_no = x[1]
     class_name = x[0]
     password = "1016594680"
-    url = "http://3.142.45.62/api/update/student/attend"
+    url = "https://staatapp.herokuapp.com/api/update/student/attend"
     record = requests.put(url, json ={'class_name':class_name, 'roll_no':roll_no, 'password':password })
     print(record.text)
 
@@ -76,9 +76,9 @@ while True:
             cv2.imshow('Webcam',img)
             cv2.waitKey(30)
             if keyboard.is_pressed('q'):
-                exit(0)
+                exit()
         else:
             cv2.imshow('Webcam',img)
             cv2.waitKey(30)
             if keyboard.is_pressed('q'):
-                exit(0)
+                exit()
