@@ -26,6 +26,9 @@ from ui_delete import Ui_DELETE_2
 ## ==> GLOBALS
 counter = 0
 
+
+
+
 class add(QMainWindow):
 
     def __init__(self):

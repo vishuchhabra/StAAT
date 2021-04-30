@@ -72,13 +72,15 @@ while True:
                 cv2.putText(img,name,(x1+6,y2-6),cv2.FONT_HERSHEY_COMPLEX,1,(0,0,0),2)
                 print(name)
                 markAttendance(name)
+                if cv2.waitKey(1) & 0xFF == ord('q'):
+                    exit()
         except:
             cv2.imshow('Webcam',img)
             cv2.waitKey(30)
-            if keyboard.is_pressed('q'):
+            if cv2.waitKey(1) & 0xFF == ord('q'):
                 exit()
         else:
             cv2.imshow('Webcam',img)
             cv2.waitKey(30)
-            if keyboard.is_pressed('q'):
+            if cv2.waitKey(1) & 0xFF == ord('q'):
                 exit()
