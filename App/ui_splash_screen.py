@@ -117,7 +117,7 @@ class Ui_SplashScreen(object):
         self.label_title.setText(_translate("SplashScreen", "<html><head/><body><p align=\"center\">StAT</p></body></html>"))
         self.label_description.setText(_translate("SplashScreen", "<html><head/><body><p>Smart attendance application</p></body></html>"))
         self.label_loading.setText(_translate("SplashScreen", "loading..."))
-        self.label_credits.setText(_translate("SplashScreen", "<html><head/><body><p><span style=\" font-weight:600;\">Created</span>: Neehit G.</p></body></html>"))
+        self.label_credits.setText(_translate("SplashScreen", "<html><head/><body><p><span style=\" font-weight:600;\">Created</span>: Noobs..</p></body></html>"))
 
 
 if __name__ == "__main__":
