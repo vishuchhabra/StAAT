@@ -1,2 +1,2 @@
-# StAT
-Student Activity Tracker
+# StAAT
+Student Activity and Attendance Tracker
